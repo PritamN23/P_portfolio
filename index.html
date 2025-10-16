@@ -2,305 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="hello i'm pritam welcome your in my dome">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hello I'm Pritam — developer portfolio" />
     <title>Pritam - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(58, 58, 122);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: rgb(253, 255, 255);
-        }
-
-        nav ul li a:hover {
-            color: rgb(129, 191, 186);
-            font-size: 1.03rem;
-        }
-
-        main hr {
-            border: 0;
-            background-color: rgb(122, 122, 209);
-            height: 1.2px;
-            margin: 40px 84px;
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 150px 0;
-        }
-
-        .firstsection>div {
-            width: 30%;
-        }
-
-        .leftsection {
-            font-size: 3rem;
-        }
-
-        .leftsection .buttons {
-            padding: 50px 0;
-        }
-
-        .leftsection .btn {
-            padding: 12px;
-            background: #1e2167;
-            color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .rightsection img {
-            width: 80%;
-        }
-
-        .purple {
-            color: rgb(170, 107, 228);
-        }
-
-        .text-gray {
-            color: gray;
-        }
-
-        #element {
-            color: rgb(170, 107, 228);
-        }
-
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-
-        .secondSection h1 {
-            font-size: 1.9rem;
-        }
-
-        .secondSection .box {
-            background: white;
-            width: 76vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-
-        /* .buttons .btn:active{
-            background-color: red;
-        }
-
-        .buttons:hover{
-            background-color: yellow;
-            color: red;
-        } */
-
-        .secondSection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 140px;
-        }
-
-        .image-top {
-            width: 23px;
-            position: relative;
-            top: -32px;
-            left: -9px;
-        }
-
-        .vertical-title {
-            position: relative;
-            top: 75px;
-            width: 150px;
-            font-size: 20px;
-        }
-
-        .vertical-desc {
-            position: relative;
-            top: 86px;
-            color: gray;
-            width: 150px;
-            font-size: 10px;
-        }
-
-        footer {
-            background-color: rgb(54 54 126);
-
-        }
-
-        .footer {
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-
-        }
-
-        .footer ul {
-            list-style: none;
-        }
-
-        .footer>div {
-            width: 223px;
-        }
-
-        footer.footer-rights {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
-    </style>
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header>
-        <nav>
-            <div class="left"> Pritam Portfolio</h1></div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Project</a></li>
-                    <li><a href="/">Content Me</a></li>
-                </ul>
+        <nav class="container">
+            <div class="brand">Pritam • Frontend Developer</div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" id="navToggle">
+            </button>
+
+            <div id="main-nav" class="nav-list" role="navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#work">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
-    <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hello i'm <span class="purple">Pritam</span>
-                <div>and I am a passionate about</div>
-                <span id="element"></span>
-                <div class="buttons">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn">Visit Github</button>
-                    <a href="https://github.com/PritamN23" target="_blank"></a>
 
+    <main id="main" class="container">
+        <section class="hero" id="home">
+            <div class="hero-left">
+                <div class="hero-title">
+                    Hello — I'm <span class="type">Pritam</span>
+                </div>
+                <div class="hero-sub">
+                    A passionate frontend developer building beautiful and responsive
+                    websites.
+                </div>
+                <div id="element" style="font-weight: 600; color: var(--accent); height: 28px"></div>
+
+                <div class="btns">
+                    <button class="btn primary">
+                        <a href="#" download>Download Resume</a>
+                    </button>
+                    <button class="btn">
+                        <a href="https://github.com/PritamN23" target="_blank" rel="noopener noreferrer">Visit
+                            GitHub</a>
+                    </button>
                 </div>
             </div>
-            <div class="rightsection">
-                <img src="prit.png" alt="man on table ">
+
+            <div class="hero-right">
+                <img class="profile-img" src="assets/bg.png" alt="Pritam profile image" />
             </div>
         </section>
-        <hr>
-        <section class="secondSection">
-            <span class="text-gray">What i have done so far</span>
-            <h1>Work Experience</h1>
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="C Programming.jpg" alt="">
-                    <div class="vertical-title">
-                        C programming language (2021-2022)
-                    </div>
-                    <div class="vertical-desc">
-                        C is a high-level programming language developed by Dennis Ritchie in the early
-                        1970s at Bell Labs. It is known for its efficiency and control, as well as its
-                        ability to directly manipulate hardware through low-level operations.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="c++.png" alt="">
-                    <div class="vertical-title">
-                        C++ programming language (2022-2023)
-                    </div>
-                    <div class="vertical-desc">
-                        C++ is a high-level programming language that was developed by Bjarne Stroustrup starting
-                        in 1979 at Bell Labs. C++ enhances the C programming language with object-oriented features.
-                        Often, it is used in system/software development and game development, among other fields.
-                        Here’s a brief overview for a foundational understanding
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="python.png" alt="">
-                    <div class="vertical-title">
-                        Pyhton programming language (2023)
-                    </div>
-                    <div class="vertical-desc">
-                        Python is a high-level, interpreted programming language known for its simplicity, readability,
-                        and versatility. Developed by Guido van Rossum and first released in 1991, Python emphasizes
-                        code readability with its notable use of significant whitespace. 
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="html.png" alt="">
-                    <div class="vertical-title">
-                        HTML programming language (2023-2024)
-                    </div>
-                    <div class="vertical-desc">
-                        HTML, which stands for HyperText Markup Language, is the standard markup language
-                        used for creating web pages and web applications. It's a foundational technology used
-                        widely across the internet
-                    </div>
-                </div>
-            </div>
 
+        <hr class="divider" />
+
+        <section class="work" id="work">
+            <span style="color: var(--muted)">What I have done so far</span>
+            <h2>Work Experience & Skills</h2>
+
+            <div class="timeline">
+                <article class="card">
+                    <img src="assets/C Programming.jpg" alt="C logo" />
+                    <h3>C Programming (2021 - 2022)</h3>
+                    <p>
+                        C is a powerful low-level language suitable for system
+                        programming. I learned fundamentals like pointers, memory
+                        management and algorithmic thinking.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img src="assets/c++.png" alt="C++ logo" />
+                    <h3>C++ (2022 - 2023)</h3>
+                    <p>
+                        C++ added object-oriented concepts on top of C. I practiced
+                        classes, data structures and basic OOP design.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img src="assets/python.png" alt="Python logo" />
+                    <h3>Python (2023)</h3>
+                    <p>
+                        Python for scripting, data-processing and prototypes. I used
+                        Python for automation and small tooling.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img src="assets/html.png" alt="HTML logo" />
+                    <h3>HTML5 (2023 - 2024)</h3>
+                    <p>
+                        Building responsive web pages using semantic HTML and modern CSS
+                        techniques (Flexbox, Grid and responsive media queries).
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img src="assets/html.png" alt="HTML logo" />
+                    <h3>CSS3 (2023 - 2024)</h3>
+                    <p>
+                        Building responsive web pages using semantic HTML and modern CSS
+                        techniques (Flexbox, Grid and responsive media queries).
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" style="padding: 28px 0">
+            <h2>Contact</h2>
+            <p style="color: var(--muted)">
+                Want to work together? Email me at
+                <a href="mailto:pritamnagdeve2244@gmail.com">pritamnagdeve2244@gmail.com</a>
+            </p>
         </section>
     </main>
+
     <footer>
-        <div class="footer">
-            <div class="footer-first">
-                <h3>Pritam Developer Portfolio</h3>
+        <div class="container footer-inner">
+            <div>
+                <strong>Pritam Developer Portfolio</strong>
+                <div style="color: var(--muted); font-size: 0.9rem">
+                    Frontend Developer • Responsive Websites
+                </div>
             </div>
-            <div class="footer-second">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="footer-right">
-                Copyright &#169;pritamsportfolio.com | All right reserved
-            </div>
+            <p style="color: var(--muted)">
+                Copyright © pritamportfolio.com | All rights reserved
+            </p>
         </div>
     </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web developer', 'Web designer'],
-            typeSpeed: 70,
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
